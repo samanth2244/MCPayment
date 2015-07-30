@@ -70,6 +70,7 @@ You will get this call back when the user selects a new shipping address in the 
 - (void)paymentAuthorizationViewController:(UIViewController *)controller
                   didSelectShippingAddress:(ABRecordRef)address
                                 completion:(void (^)(MCPaymentAuthorizationStatus status, NSArray *shippingMethods, NSArray *summaryItems))completion
+
 {
     completion(MCPaymentAuthorizationStatusSuccess,nil,nil);
 }
@@ -82,6 +83,7 @@ You will get this call back when the user selects a new shipping method in the p
 - (void)paymentAuthorizationViewController:(UIViewController *)controller
                    didSelectShippingMethod:(MCPaymentShippingMethod *)shippingMethod
                                 completion:(void (^)(MCPaymentAuthorizationStatus status, NSArray *summaryItems))completion
+
 {
     completion(MCPaymentAuthorizationStatusSuccess,nil]);
 }
