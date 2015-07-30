@@ -58,7 +58,7 @@ Next intialize and allocate the MCPaymentManager
             }
     }];
         
-Then you will get Response Data for success or failur in completion block and also you will get the user's shipping and billing address if requested while creating payment request.
+Then you will get Response Data for success or failure in completion block and also you will get the user's shipping and billing address if requested while creating payment request.
 
 
 
