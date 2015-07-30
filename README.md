@@ -63,15 +63,13 @@ Then you will get Response Data for success or failure in completion block and a
 
 
 
-#pragma mark MCPaymentManagerDelegate Methods
+MCPaymentManagerDelegate Methods
 
 You will get this call back when the user selects a new shipping address in the payment sheet. Here you need to pass the required summary items and shipping methods for the new shipping address. Based on the address validation whether shipping is available for the new address, you need to pass the completion status like MCPaymentAuthorizationStatusInvalidShippingPostalAddress  or MCPaymentAuthorizationStatusInvalidShippingContact or Success or Failure. If you don't want to update the summaryitems and shipping methods just pass nil.
 
 - (void)paymentAuthorizationViewController:(UIViewController *)controller
-- 
                   didSelectShippingAddress:(ABRecordRef)address
-
-                                completion:(void (^)(MCPaymentAuthorizationStatus status, NSArray *shippingMethods, NSArray *summaryItems))completion
+                                completion:(void (^)(MCPaymentAuthorizationStatus status, NSArray *shippingMethods,  NSArray *summaryItems))completion
 
 {
 
